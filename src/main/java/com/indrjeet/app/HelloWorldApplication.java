@@ -13,6 +13,8 @@ public class HelloWorldApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx =  SpringApplication.run(HelloWorldApplication.class, args);
+		// Display the name of the bean used for auto scanning
+		/*
 		String[] beanNames =  ctx.getBeanDefinitionNames();
 
 		Arrays.sort(beanNames);
@@ -20,7 +22,7 @@ public class HelloWorldApplication {
 		for (String beanName : beanNames) {
 			System.out.println(beanName);
 		}
-
+		*/
 	}
 
 }
